@@ -35,8 +35,8 @@ require("lazy").setup({
           })
           local builtin = require("telescope.builtin")
           vim.keymap.set("n", "<leader>sf", builtin.find_files, { desc = "Find Files" })
-          vim.keymap.set("n", "<leader>fg", builtin.live_grep,  { desc = "Live Grep" })
-          vim.keymap.set("n", "<leader>fb", builtin.buffers,    { desc = "Buffers" })
+          vim.keymap.set("n", "<leader>sif", builtin.live_grep,  { desc = "Live Grep" })
+          vim.keymap.set("n", "<leader><leader>", builtin.buffers,    { desc = "Buffers" })
         end,
     },
     {
